@@ -99,6 +99,8 @@ type MPNameCoordItem struct {
 	// 可以是维度的直接名称，例如折线图时可以是 x、angle 等
 	// candlestick 图时可以是 open、close 等维度名称。
 	ValueDim string `json:"valueDim,omitempty"`
+	// 高亮的图形样式
+	ItemStyle ItemStyleOpts `json:"itemStyle,omitempty"`
 }
 
 func (MPNameCoordItem) MarkSeries() {}
